@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset='utf-8' />
-<link href='main.css' rel='stylesheet' />
-<script src='main.js'></script>
+<link href='../lib/main.css' rel='stylesheet' />
+<script src='../lib/main.js'></script>
 
 <script>
 var calendarEl, calendar;
@@ -44,7 +44,7 @@ console.log(events);
         calendar.unselect()
       },
       eventClick: function(arg) {
-        if (confirm('Are you sure you want to delete this event?')) {
+        if (confirm('このイベントを削除しますか?')) {
           arg.event.remove()
         }
       },
