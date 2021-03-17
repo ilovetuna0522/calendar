@@ -87,8 +87,15 @@ console.log(calendar.getEvents());
 </style>
 </head>
 <body>
-
+    <p>
+    Date：<input type="date" id="start" />
+  </p>
+  <p>
+    Title：<input type="text" name="namae" size="40" maxlength="20" id="title">
+  </p>
+  <p>
+    <input type="submit" value="送信する" onclick="OnButtonClick()">
+  </p>
   <div id='calendar'></div>
-
 </body>
 </html>
